@@ -1,9 +1,11 @@
 import { Protect } from "@clerk/nextjs";
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
-export default clerkMiddleware(); {
+export default clerkMiddleware({
+    secretKey: process.env.CLERK_SECRET_Key
+});
 
-}
+
 
 export const config = {
     matcher: [
