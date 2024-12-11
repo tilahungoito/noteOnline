@@ -2,7 +2,7 @@ import { Protect } from "@clerk/nextjs";
 import { clerkMiddleware } from "@clerk/nextjs/server";
 
 export default clerkMiddleware({
-    secretKey: process.env.CLERK_SECRET_Key
+    secretKey: process.env.CLERK_SECRET_KEY
 });
 
 
